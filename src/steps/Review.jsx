@@ -1,4 +1,3 @@
-cat > src/steps/Review.jsx << 'EOF'
 import { confMeta, avatarBg, initialsOf } from '../data'
 
 function QueueRail({ alumni, idx, onJump, approvedCount, flaggedCount, pendingCount, reviewedCount, totalCount, onGoExport }) {
@@ -161,4 +160,3 @@ export default function Review({ alumni, idx, onSetIdx, onUpdateAlumnus, onGoExp
     </div>
   )
 }
-EOF

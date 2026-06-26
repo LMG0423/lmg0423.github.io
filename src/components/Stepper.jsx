@@ -1,4 +1,3 @@
-cat > src/components/Stepper.jsx << 'EOF'
 export default function Stepper({ items }) {
   return (
     <div style={{display:'flex',alignItems:'center',padding:'18px 32px',background:'#fbfaf6',borderBottom:'1px solid #e6e1d6',flexShrink:0}}>
@@ -14,4 +13,3 @@ export default function Stepper({ items }) {
     </div>
   )
 }
-EOF

@@ -1,4 +1,3 @@
-cat > src/steps/Export.jsx << 'EOF'
 export default function Export({ alumni, onBackReview }) {
   const total=alumni.length
   const approved=alumni.filter(a=>a.status==='approved').length
@@ -61,4 +60,3 @@ export default function Export({ alumni, onBackReview }) {
     </div>
   )
 }
-EOF

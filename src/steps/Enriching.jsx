@@ -1,4 +1,3 @@
-cat > src/steps/Enriching.jsx << 'EOF'
 export default function Enriching({ progress }) {
   const found = Math.round(1284 * progress / 100)
   const status = progress < 35 ? 'Searching LinkedIn…' : progress < 70 ? 'Verifying profile matches…' : progress < 100 ? 'Extracting titles & employers…' : 'Finalizing results'
@@ -34,4 +33,3 @@ export default function Enriching({ progress }) {
     </div>
   )
 }
-EOF

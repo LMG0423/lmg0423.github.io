@@ -1,4 +1,3 @@
-cat > src/steps/Upload.jsx << 'EOF'
 export default function Upload({ fileChosen, alumni, onChoose, onReset, onEnrich }) {
   return (
     <div style={{flex:1,display:'flex',alignItems:'center',justifyContent:'center',padding:'48px 32px'}}>
@@ -56,4 +55,3 @@ export default function Upload({ fileChosen, alumni, onChoose, onReset, onEnrich
     </div>
   )
 }
-EOF

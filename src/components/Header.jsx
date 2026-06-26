@@ -1,4 +1,3 @@
-cat > src/components/Header.jsx << 'EOF'
 export default function Header({ batchName }) {
   return (
     <header style={{display:'flex',alignItems:'center',justifyContent:'space-between',padding:'0 32px',height:64,background:'#21283b',color:'#f6f4ee',flexShrink:0}}>
@@ -16,4 +15,3 @@ export default function Header({ batchName }) {
     </header>
   )
 }
-EOF

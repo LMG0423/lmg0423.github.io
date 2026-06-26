@@ -1,4 +1,3 @@
-cat > src/data.js << 'EOF'
 const c = (name, headline, title, employer, loc, conf, url, reason) => ({
   name, headline, title, employer, loc, conf, url, reason
 })
@@ -33,4 +32,3 @@ export function avatarBg(i) {
 export function initialsOf(name) {
   return name.split(' ').map(w => w[0]).slice(0,2).join('')
 }
-EOF
