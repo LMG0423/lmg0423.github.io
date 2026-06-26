@@ -1,0 +1,165 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body, #root { height: 100%; }
+
+body {
+  font-family: 'Libre Franklin', sans-serif;
+  background: #f6f4ee;
+  color: #21283b;
+  -webkit-font-smoothing: antialiased;
+}
+
+input, button, textarea, select { font-family: inherit; }
+input:focus { outline: none; }
+::selection { background: #7b2c3922; }
+
+@keyframes barshine {
+  0%   { transform: translateX(-100%); }
+  100% { transform: translateX(300%); }
+}
+
+@keyframes fadein {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: none; }
+}
+
+.btn-primary {
+  background: #7b2c39;
+  color: #fff;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(123,44,57,.3);
+  transition: background .15s;
+}
+.btn-primary:hover { background: #681f2b; }
+
+.btn-confirm {
+  background: #3f7d5b;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(63,125,91,.3);
+  transition: background .15s;
+}
+.btn-confirm:hover { background: #356b4d; }
+
+.btn-secondary {
+  background: #fff;
+  border: 1px solid #d9d2c2;
+  color: #6f6a5e;
+  padding: 12px 22px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color .15s;
+}
+.btn-secondary:hover { border-color: #21283b; }
+
+.btn-danger {
+  background: #fff;
+  border: 1px solid #d8b3b0;
+  color: #a8443f;
+  padding: 12px 22px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background .15s;
+}
+.btn-danger:hover { background: #fbf3f2; }
+
+.btn-export-rail {
+  margin: 14px 20px;
+  padding: 11px;
+  background: #fff;
+  border: 1px solid #d9d2c2;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #21283b;
+  cursor: pointer;
+  width: calc(100% - 40px);
+  transition: border-color .15s, color .15s;
+}
+.btn-export-rail:hover { border-color: #7b2c39; color: #7b2c39; }
+
+.btn-crm {
+  background: #fff;
+  border: 1px solid #d9d2c2;
+  color: #21283b;
+  padding: 12px 22px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color .15s;
+}
+.btn-crm:hover { border-color: #21283b; }
+
+.upload-zone {
+  cursor: pointer;
+  background: #fff;
+  border: 1.5px dashed #c9c2b2;
+  border-radius: 6px;
+  padding: 48px;
+  text-align: center;
+  transition: border-color .15s, background .15s;
+}
+.upload-zone:hover { border-color: #7b2c39; background: #fffefb; }
+
+.field-input {
+  width: 100%;
+  padding: 11px 13px;
+  border: 1px solid #d9d2c2;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #21283b;
+  background: #fdfcf9;
+  transition: border-color .15s;
+}
+.field-input:focus { border-color: #7b2c39; }
+
+.rail-item {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 11px 20px;
+  cursor: pointer;
+  border-bottom: 1px solid #f3eee2;
+  transition: background .12s;
+}
+.rail-item:hover { background: #f5f0e5; }
+
+.candidate-card {
+  flex: 1;
+  cursor: pointer;
+  background: #fff;
+  border-radius: 6px;
+  padding: 14px;
+  transition: border-color .12s;
+}
+
+.nav-btn {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #d9d2c2;
+  background: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #6f6a5e;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color .12s;
+}
+.nav-btn:hover { border-color: #21283b; }
